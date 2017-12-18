@@ -77,15 +77,15 @@ display: none;
 #txtSelTeclado{
 position:absolute;
 top: 500px;
-left: 50px
+left: 40px
 }    
 
 #selTeclado{
 background-color: red;
 border-radius:25px;
 position: relative;
-top: -25px;
-left: 80px;
+top: -30px;
+left: 90px;
 height: 10px;
 width: 10px;
 }
@@ -101,7 +101,7 @@ left: 180px
 background-color: pink;
 border-radius:25px;
 position: relative;
-top: -25px;
+top: -30px;
 left: -20px;
 height: 10px;
 width: 10px;
