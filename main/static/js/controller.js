@@ -29,8 +29,7 @@ var jugando = false;
 var bloqueADestruido = false;
 var bloqueBDestruido = false;
 var bloqueCDestruido = false;
-
-
+var puntuacion = 0;
 
 document.addEventListener("keydown", lectorTeclas, false);
 document.addEventListener('mousemove', mouse_monitor);
@@ -166,24 +165,28 @@ function checkCollisionWithBlockA(){
         if(pelotaX >= bloqueAX && pelotaX <= (bloqueAX+dimBloqueX)&&pelotaY == (bloqueAY+dimBloqueY)){
             dy^=true;
         bloqueADestruido = true;
+        sumarPuntuacion();
         bloqueA.style.display = 'none';
         }
 
         if(pelotaX >= bloqueAX && pelotaX <= (bloqueAX+dimBloqueX)&&pelotaY == bloqueAY){
             dy^=true;
         bloqueADestruido = true;
+        sumarPuntuacion();
         bloqueA.style.display = 'none';
         }
 
         if(pelotaX == bloqueAX && (pelotaY >=bloqueAY)&& (pelotaY <= bloqueAY+dimBloqueY)){
             dx^=true;
         bloqueADestruido = true;
+        sumarPuntuacion();
         bloqueA.style.display = 'none';
         }
 
         if(pelotaX == (bloqueAX+dimBloqueX)&&(pelotaY >=bloqueAY)&& (pelotaY <= bloqueAY+dimBloqueY)){
             dx^=true;
         bloqueADestruido = true;
+        sumarPuntuacion();
         bloqueA.style.display = 'none';
         }
 
@@ -194,24 +197,28 @@ function checkCollisionWithBlockB(){
         if(pelotaX >= bloqueBX && pelotaX <= (bloqueBX+dimBloqueX)&&pelotaY == (bloqueBY+dimBloqueY)){
             dy^=true;
         bloqueBDestruido = true;
+        sumarPuntuacion();
         bloqueB.style.display = 'none';
         }
 
         if(pelotaX >= bloqueBX && pelotaX <= (bloqueBX+dimBloqueX)&&pelotaY == bloqueBY){
             dy^=true;
         bloqueBDestruido = true;
+        sumarPuntuacion();
         bloqueB.style.display = 'none';
         }
 
         if(pelotaX == bloqueBX && (pelotaY >=bloqueBY)&& (pelotaY <= bloqueBY+dimBloqueY)){
             dx^=true;
         bloqueBDestruido = true;
+        sumarPuntuacion();
         bloqueB.style.display = 'none';
         }
 
         if(pelotaX == (bloqueBX+dimBloqueX)&&(pelotaY >=bloqueBY)&& (pelotaY <= bloqueBY+dimBloqueY)){
             dx^=true;
         bloqueBDestruido = true;
+        sumarPuntuacion();
         bloqueB.style.display = 'none';
         }
 
@@ -223,28 +230,37 @@ function checkCollisionWithBlockC(){
         if(pelotaX >= bloqueCX && pelotaX <= (bloqueCX+dimBloqueX)&&pelotaY == (bloqueCY+dimBloqueY)){
             dy^=true;
         bloqueCDestruido = true;
+        sumarPuntuacion();
         bloqueC.style.display = 'none';
         }
 
         if(pelotaX >= bloqueCX && pelotaX <= (bloqueCX+dimBloqueX)&&pelotaY == bloqueCY){
             dy^=true;
         bloqueCDestruido = true;
+        sumarPuntuacion();
         bloqueC.style.display = 'none';
         }
 
         if(pelotaX == bloqueCX && (pelotaY >=bloqueCY)&& (pelotaY <= bloqueCY+dimBloqueY)){
             dx^=true;
         bloqueCDestruido = true;
+        sumarPuntuacion();
         bloqueC.style.display = 'none';
         }
 
         if(pelotaX == (bloqueCX+dimBloqueX)&&(pelotaY >=bloqueCY)&& (pelotaY <= bloqueCY+dimBloqueY)){
             dx^=true;
         bloqueCDestruido = true;
+        sumarPuntuacion();
         bloqueC.style.display = 'none';
         }
 
     }
+}
+
+function sumarPuntuacion(){
+	puntuacion +=5;
+	document.getElementById("puntuacion").innerHTML = "Puntuacion: "+puntuacion;
 }
 
 function checkPelotaCollisionWithNave(){

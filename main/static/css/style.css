@@ -22,104 +22,105 @@
 
 
 #bloqueA{
-height: 15px;
-width: 30px;
-top:50px;
-left: 10px;
-position: absolute;
-background-color: red;
-
-
+	height: 15px;
+	width: 30px;
+	top:50px;
+	left: 10px;
+	position: absolute;
+	background-color: red;
 }
 
 #bloqueB{
-height: 15px;
-width: 30px;
-top:50px;
-left: 130px;
-position: relative;
-background-color: yellow;
+	height: 15px;
+	width: 30px;
+	top:50px;
+	left: 130px;
+	position: relative;
+	background-color: yellow;
+}
+
+#puntuacion{
+    position: relative;
+    left: 50px;
 }
 
 #bloqueC{
-
-height: 15px;
-width: 30px;
-top:50px;
-left: 260px;
-position: absolute;
-background-color: green;
+	height: 15px;
+	width: 30px;
+	top:50px;
+	left: 260px;
+	position: absolute;
+	background-color: green;
 }
 
 #msgGameOver{
-position: relative;
-top:50%;
-left: 10%;
-font-size: 2em;
-display: none;
+	position: relative;
+	top: 150px;
+	left: 25px;
+	font-size: 2em;
+	display: none;
 }
 #msgPausa{
-position: relative;
-top:50%;
-left: 10%;
-font-size: 2em;
-display: none;
+	position: relative;
+	top: 150px;
+	left: 25px;
+	font-size: 2em;
+	display: none;
 }
 
 #msgGanaste{
-position: relative;
-top:50%;
-left: 10%;
-font-size: 2em;
-display: none;
+	position: relative;
+	top: 150px;
+	left: 25px;
+	font-size: 2em;
+	display: none;
 }
 
 #txtSelTeclado{
-position:absolute;
-top: 500px;
-left: 40px
+	position:absolute;
+	top: 500px;
+	left: 40px
 }    
 
 #selTeclado{
-background-color: red;
-border-radius:25px;
-position: relative;
-top: -30px;
-left: 90px;
-height: 10px;
-width: 10px;
+	background-color: red;
+	border-radius:25px;
+	position: relative;
+	top: -30px;
+	left: 90px;
+	height: 10px;
+	width: 10px;
 }
 
 
 #txtSelRaton{
-position:absolute;
-top: 500px;
-left: 180px
+	position:absolute;
+	top: 500px;
+	left: 180px
 }    
 
 #selRaton{
-background-color: pink;
-border-radius:25px;
-position: relative;
-top: -30px;
-left: -20px;
-height: 10px;
-width: 10px;
+	background-color: pink;
+	border-radius:25px;
+	position: relative;
+	top: -30px;
+	left: -20px;
+	height: 10px;
+	width: 10px;
 }
 
 #canvas { 
-height: 500px;
-width: 300px;
-left:0;
-top: 0;
-position: absolute;
-background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-background-size: 1800% 1800%;
-
--webkit-animation: rainbow 18s ease infinite;
--z-animation: rainbow 18s ease infinite;
--o-animation: rainbow 18s ease infinite;
-animation: rainbow 18s ease infinite;
+	height: 500px;
+	width: 300px;
+	left:0;
+	top: 0;
+	position: absolute;
+	background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+	background-size: 1800% 1800%;
+	-webkit-animation: rainbow 18s ease infinite;
+	-z-animation: rainbow 18s ease infinite;
+	-o-animation: rainbow 18s ease infinite;
+	animation: rainbow 18s ease infinite;
 }
 
 @-webkit-keyframes rainbow {
